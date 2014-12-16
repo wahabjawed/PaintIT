@@ -1,0 +1,67 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <title>paintIT</title>
+  <link rel="stylesheet" type="text/css" href="letterpaint.css">
+</head>
+<body>
+  <div id="container" class="container">
+
+    <div id="chars" class="gamedata">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789</div>
+
+    <canvas></canvas>
+
+    <h1 class="toppanel">paintIT</h1>
+     <h1 id ="msg" class="msg"></h1>
+
+    <div id="intro" class="cover">
+      <p>Paint over the letter you see on the screen. Can you write it without going outside of it?</p>
+      <button class="actionbutton">➜</button>
+    </div>
+
+    <button id="quit" class="navbutton">X</button>	
+    <button id="sound" class="navbutton">♬</button>
+
+    <button id="infos" class="navbutton">i</button>
+    
+
+    <div id="win" class="cover check">
+      <p>Good job!</p> 
+      <p id = "sec">Good job!</p> 
+      <button class="actionbutton">➜</button>
+    </div>
+
+    <div id="error" class="cover">
+      <p>You painted outside the letter!</p> 
+      <button class="actionbutton">➜</button>
+    </div>
+    
+     <div id="confirm" class="coverc">
+      <p id ="confirmM"></p> 
+      <button id = "continue" class="continue">Continue Game</button>
+       <button id="quitg" class="quitg">Really Quit</button>
+    </div>
+    
+<p id = "sc" class="score">Score: 0</p>
+    <div id="info" class="cover infopanel">
+      <h1>paintIT</h1>
+      <p>version 1.0</p>
+      
+    </div>
+
+    <button class="actionbutton undo" id="reload">X</button>
+
+    
+  </div>
+
+
+  <audio src="win.ogg" id="winsound"></audio>
+  <audio src="error.ogg" id="errorsound"></audio>
+
+  <script src="jquery-1.10.2.js"></script>
+  <script src="letterpaint.js"></script>
+
+</body>
+</html>
